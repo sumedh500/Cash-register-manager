@@ -6,6 +6,12 @@ input.addEventListener("click",()=>{
     console.log("Cash",cashGiven.value)
     if(billAmount.value>=0){
         console.log("hit Condition")
+        if(billAmount.value>=cashGiven.value){
+            console.log("hit true Condition")
+        }else{
+            console.log("enter cash amount is invalid")
+        }
+
     }else{
         console.log("hitt invalid")
     }
