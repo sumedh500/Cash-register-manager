@@ -16,10 +16,10 @@ input.addEventListener("click", () => {
             console.log("total", total)
             calculatefunction(total)
         } else {
-            showMessage("Do you wanna wash plates?");
+            alert("Do you wanna wash plates?");
         }
     } else {
-        showMessage("Invalid Bill Amount");
+        alert("Invalid Bill Amount");
     }
 })
 
@@ -31,9 +31,4 @@ function calculatefunction(amount) {
 
         noOfNotes[i].innerText = numberOfNotes;
     }
-}
-
-function showMessage(msg) {
-    message.style.display = "block";
-    message.innerText = msg;
 }
