@@ -5,14 +5,21 @@ input.addEventListener("click",()=>{
     console.log("Amount",billAmount.value)
     console.log("Cash",cashGiven.value)
     if(billAmount.value>=0){
-        console.log("hit Condition")
+
         if(billAmount.value>=cashGiven.value){
-            console.log("hit true Condition")
+            var billamount=billAmount.value
+            var cashamount=cashGiven.value
+             var total=billamount-cashamount
+             console.log("total",total)
         }else{
-            console.log("enter cash amount is invalid")
+            
         }
 
     }else{
         console.log("hitt invalid")
     }
 })
+
+function calculatefunction(amount){
+
+}
