@@ -4,5 +4,9 @@ const cashGiven=document.querySelector("#cash-input")
 input.addEventListener("click",()=>{
     console.log("Amount",billAmount.value)
     console.log("Cash",cashGiven.value)
-
+    if(billAmount.value>=0){
+        console.log("hit Condition")
+    }else{
+        console.log("hitt invalid")
+    }
 })
