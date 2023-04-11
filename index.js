@@ -28,7 +28,6 @@ function calculatefunction(amount) {
     for (let i = 0; i < change.length; i++) {
         const numberOfNotes = Math.trunc(amount / change[i]);
         amount = amount % change[i];
-
         noOfNotes[i].innerText = numberOfNotes;
     }
 }
